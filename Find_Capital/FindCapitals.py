@@ -45,8 +45,9 @@ while True:
     else: 
 
         new_capital= simpledialog.askstring('capital', "I don't know that one! Can you tell me what the capital is?") #display message and takes input
+        the_world[query_country]=new_capital
         write_to_file(query_country, new_capital) #using the function, writes the new capital and city into the txt file
-        exit() 
+        
        
 
 root.mainloop() #loops code
